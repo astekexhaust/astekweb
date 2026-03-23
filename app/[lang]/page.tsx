@@ -1,5 +1,4 @@
-"use client";
-
+import { use } from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
@@ -7,8 +6,8 @@ import { ProductCard } from "@/components/product-card";
 import { Button } from "@/components/button";
 import { getTranslation, Language } from "@/lib/i18n";
 
-export default function HomePage() {
-  const lang: Language = "en";
+export default function HomePage({ params }: { params: Promise<{ lang: Language }> }) {
+  const { lang } = use(params);
   const t = getTranslation(lang);
 
   return (

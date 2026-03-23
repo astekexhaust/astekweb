@@ -1,14 +1,12 @@
-"use client";
-
+import { use, useState } from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Button } from "@/components/button";
 import { getTranslation, Language } from "@/lib/i18n";
-import { useState } from "react";
 
-export default function ContactPage() {
-  const lang: Language = "en";
+export default function ContactPage({ params }: { params: Promise<{ lang: Language }> }) {
+  const { lang } = use(params);
   const t = getTranslation(lang);
   const [formData, setFormData] = useState({
     name: "",

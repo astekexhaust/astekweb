@@ -1,12 +1,11 @@
-"use client";
-
+import { use } from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { getTranslation, Language } from "@/lib/i18n";
 
-export default function CookiePolicyPage() {
-  const lang: Language = "en";
+export default function CookiePolicyPage({ params }: { params: Promise<{ lang: Language }> }) {
+  const { lang } = use(params);
   const t = getTranslation(lang);
 
   return (

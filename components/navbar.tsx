@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { Language } from "@/lib/i18n";
 
 interface NavbarProps {
@@ -11,11 +12,15 @@ interface NavbarProps {
 
 export function Navbar({ lang, navItems }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
-  const toggleLanguage = () => {
+  const toggleLanguage = useCallback(() => {
     const newLang = lang === "en" ? "it" : "en";
-    window.location.href = `/${newLang}`;
-  };
+    // Replace the current language in the pathname with the new one
+    const newPathname = pathname.replace(`/${lang}/`, `/${newLang}/`) || `/${newLang}`;
+    router.push(newPathname);
+  }, [lang, pathname, router]);
 
   return (
     <nav className="sticky top-0 z-50 bg-black border-b border-gray-800">
@@ -48,6 +53,7 @@ export function Navbar({ lang, navItems }: NavbarProps) {
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-3 py-1.5 text-sm font-semibold text-white hover:text-blue-600 transition rounded hover:bg-gray-900"
               aria-label={lang === "en" ? "Switch to Italian" : "Switch to English"}
+              title={lang === "en" ? "Cambia a italiano" : "Switch to English"}
             >
               {lang === "en" ? (
                 <>
