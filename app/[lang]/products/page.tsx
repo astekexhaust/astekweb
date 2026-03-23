@@ -74,7 +74,7 @@ export default function ProductsPage() {
                 <select
                   value={selectedBrand}
                   onChange={(e) => setSelectedBrand(e.target.value)}
-                  className="flex-1 px-4 py-2 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="flex-1 px-4 py-2 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 >
                   <option value="all">{t.products.flOriginal}</option>
                   <option value="porsche">PORSCHE</option>
@@ -84,7 +84,7 @@ export default function ProductsPage() {
                 </select>
 
                 <select
-                  className="flex-1 px-4 py-2 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="flex-1 px-4 py-2 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 >
                   <option>{t.products.brand}</option>
                 </select>

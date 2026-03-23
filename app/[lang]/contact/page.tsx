@@ -114,7 +114,7 @@ export default function ContactPage() {
             </h2>
 
             <div className="flex flex-col md:flex-row gap-4">
-              <select className="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600">
+              <select className="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600">
                 <option>{t.contact.locationPlaceholder}</option>
               </select>
               <Button variant="primary">{t.contact.searchButton}</Button>
@@ -145,7 +145,7 @@ export default function ContactPage() {
               <div>
                 <label className="block text-white text-sm font-semibold mb-2">
                   {t.contact.contactForm.name}
-                  <span className="text-red-600">*</span>
+                  <span className="text-blue-600">*</span>
                 </label>
                 <input
                   type="text"
@@ -161,7 +161,7 @@ export default function ContactPage() {
               <div>
                 <label className="block text-white text-sm font-semibold mb-2">
                   {t.contact.contactForm.email}
-                  <span className="text-red-600">*</span>
+                  <span className="text-blue-600">*</span>
                 </label>
                 <input
                   type="email"
@@ -169,7 +169,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder={t.contact.contactForm.emailPlaceholder}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 />
               </div>
 
@@ -184,7 +184,7 @@ export default function ContactPage() {
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder={t.contact.contactForm.phonePlaceholder}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 />
               </div>
 
@@ -192,7 +192,7 @@ export default function ContactPage() {
               <div>
                 <label className="block text-white text-sm font-semibold mb-2">
                   {t.contact.contactForm.country}
-                  <span className="text-red-600">*</span>
+                  <span className="text-blue-600">*</span>
                 </label>
                 <input
                   type="text"
@@ -200,7 +200,7 @@ export default function ContactPage() {
                   value={formData.country}
                   onChange={handleInputChange}
                   placeholder={t.contact.contactForm.countryPlaceholder}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 />
               </div>
 
@@ -208,7 +208,7 @@ export default function ContactPage() {
               <div>
                 <label className="block text-white text-sm font-semibold mb-2">
                   {t.contact.contactForm.carModel}
-                  <span className="text-red-600">*</span>
+                  <span className="text-blue-600">*</span>
                 </label>
                 <input
                   type="text"
@@ -216,7 +216,7 @@ export default function ContactPage() {
                   value={formData.carModel}
                   onChange={handleInputChange}
                   placeholder={t.contact.contactForm.carModelPlaceholder}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 />
               </div>
 
@@ -231,7 +231,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   placeholder={t.contact.contactForm.inquiryPlaceholder}
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                 ></textarea>
               </div>
 
@@ -240,12 +240,12 @@ export default function ContactPage() {
                 <div className="flex-1">
                   <label className="block text-white text-sm font-semibold mb-2">
                     {t.contact.contactForm.verificationCode}
-                    <span className="text-red-600">*</span>
+                    <span className="text-blue-600">*</span>
                   </label>
                   <input
                     type="text"
                     placeholder={t.contact.contactForm.verificationCodePlaceholder}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-red-600"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded focus:outline-none focus:border-blue-600"
                   />
                 </div>
                 <div className="px-4 py-3 bg-gray-700 text-white rounded font-semibold">
@@ -255,7 +255,7 @@ export default function ContactPage() {
 
               <button
                 type="button"
-                className="text-red-600 text-sm hover:text-red-700 transition"
+                className="text-blue-600 text-sm hover:text-blue-700 transition"
               >
                 {t.contact.contactForm.recapVerification}
               </button>
@@ -279,7 +279,7 @@ export default function ContactPage() {
                   checked={formData.subscribe}
                   onChange={handleInputChange}
                   id="subscribe"
-                  className="w-5 h-5 accent-red-600 cursor-pointer"
+                  className="w-5 h-5 accent-blue-600 cursor-pointer"
                 />
                 <label
                   htmlFor="subscribe"
@@ -297,7 +297,7 @@ export default function ContactPage() {
               )}
 
               {status === "error" && (
-                <div className="p-4 bg-red-900 border border-red-700 text-red-100 rounded text-sm">
+                <div className="p-4 bg-blue-900 border border-blue-700 text-blue-100 rounded text-sm">
                   {t.contact.contactForm.error}
                 </div>
               )}
@@ -340,7 +340,7 @@ export default function ContactPage() {
                     <h3 className="text-white font-semibold text-left">
                       {item.question}
                     </h3>
-                    <span className="text-red-600 text-2xl">
+                    <span className="text-blue-600 text-2xl">
                       {expandedFaq === idx ? "−" : "+"}
                     </span>
                   </button>

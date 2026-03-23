@@ -2,12 +2,7 @@ export const it = {
   // Navigation
   nav: {
     product: "PRODOTTO",
-    news: "NOTIZIE",
-    review: "RECENSIONE",
     about: "CHI SIAMO",
-    faq: "DOMANDE FREQUENTI",
-    dealer: "RIVENDITORE",
-    lifestyle: "LIFESTYLE",
     contact: "CONTATTACI",
   },
 
@@ -16,7 +11,7 @@ export const it = {
     termsAndConditions: "Termini e Condizioni",
     privacyPolicy: "Politica sulla Privacy",
     cookiePolicy: "Politica sui Cookie",
-    copyright: "© 2026 FI EXHAUST, Inc. Tutti i diritti riservati.",
+    copyright: "© 2026 Astek Exhaust, Inc. Tutti i diritti riservati.",
   },
 
   // Home Page
@@ -27,7 +22,7 @@ export const it = {
     },
     featured: "IN EVIDENZA",
     unlockPower: "Sblocca più Potenza",
-    unlockPowerDesc: "Miglioramento delle prestazioni FI EXHAUST",
+    unlockPowerDesc: "Miglioramento delle prestazioni Astek Exhaust",
     activateDeeper: "Attiva Suono Più Profondo",
     activateDeeperDesc: "Regolazione del Suono Aggressiva",
     theLegend: "La Leggenda Continua",
@@ -36,9 +31,9 @@ export const it = {
     monstrousPowerDesc: "Domina la Strada",
     mPerformance: "M-Performance",
     mPerformanceDesc: "Eccellenza BMW M Sport",
-    titaniumSignature: "FI TITANIUM SIGNATURE",
+    titaniumSignature: "Astek TITANIUM SIGNATURE",
     titaniumSignatureDesc: "Rapporto Resistenza-Peso Senza Precedenti",
-    proRemote: "FI Pro Remote Control Ring",
+    proRemote: "Astek Pro Remote Control Ring",
     proRemoteDesc: "Controllo del Suono di Nuova Generazione",
     dealerLocator: "LOCALIZZATORE RIVENDITORE",
     dealerLocatorDesc: "Trova il Rivenditore del Tuo Paese",
@@ -49,10 +44,10 @@ export const it = {
   products: {
     hero: {
       title: "PRODOTTI",
-      subtitle: "FI EXHAUST",
+      subtitle: "Astek Exhaust",
     },
     searchPlaceholder: "Cerca lo Scarico:",
-    flOriginal: "FI ORIGINALE",
+    flOriginal: "ASTEK ORIGINALE",
     brand: "MARCA",
     search: "CERCA",
     cantFind: "Non riesci a trovare il tuo veicolo esatto?",
@@ -126,7 +121,7 @@ export const it = {
       carModelPlaceholder: "es. Toyota / Supra 3.0 / 2020",
       inquiry: "Richiesta:",
       inquiryPlaceholder:
-        "(Opzionale) Un rappresentante di vendita FI contatterà per un preventivo, se questo campo non è completato.",
+        "(Opzionale) Un rappresentante di vendita Astek Exhaust contatterà per un preventivo, se questo campo non è completato.",
       verificationCode: "Codice di Verifica",
       verificationCodePlaceholder: "es: 1234",
       recapVerification: "Verifica il codice di verifica",
@@ -147,9 +142,9 @@ export const it = {
       items: [
         {
           question:
-            "Quale garanzia forniscono i prodotti FI EXHAUST?",
+            "Quale garanzia forniscono i prodotti Astek Exhaust?",
           answer:
-            "Tutti i sistemi FI EXHAUST includono una garanzia del produttore di 2 anni che copre i difetti dei materiali e della lavorazione. Sono disponibili garanzie estese per i prodotti premium.",
+            "Tutti i sistemi Astek Exhaust includono una garanzia del produttore di 2 anni che copre i difetti dei materiali e della lavorazione. Sono disponibili garanzie estese per i prodotti premium.",
         },
         {
           question:
@@ -159,15 +154,15 @@ export const it = {
         },
         {
           question:
-            "Posso installare io stesso il sistema FI EXHAUST?",
+            "Posso installare io stesso il sistema Astek Exhaust?",
           answer:
-            "Mentre alcuni tecnici esperti potrebbero installare i sistemi FI EXHAUST, consigliamo vivamente l'installazione professionale per garantire il corretto adattamento, allineamento e conformità alla garanzia.",
+            "Mentre alcuni tecnici esperti potrebbero installare i sistemi Astek Exhaust, consigliamo vivamente l'installazione professionale per garantire il corretto adattamento, allineamento e conformità alla garanzia.",
         },
         {
           question:
-            "I sistemi FI EXHAUST sono legali per la strada?",
+            "I sistemi Astek Exhaust sono legali per la strada?",
           answer:
-            "Tutti i prodotti FI EXHAUST sono progettati per conformarsi alle normative standard sulle emissioni e il rumore. Tuttavia, le normative locali possono variare, quindi consigliamo di verificare con le autorità locali.",
+            "Tutti i prodotti Astek Exhaust sono progettati per conformarsi alle normative standard sulle emissioni e il rumore. Tuttavia, le normative locali possono variare, quindi consigliamo di verificare con le autorità locali.",
         },
         {
           question:

@@ -29,8 +29,8 @@ export function Footer({
               {/* 200x200px Company Logo Placeholder */}
               <div className="w-[200px] h-[200px] bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded flex items-center justify-center mb-6">
                 <div className="text-center">
-                  <div className="text-red-600 text-4xl font-bold mb-2">FI</div>
-                  <div className="text-gray-400 text-xs">EXHAUST</div>
+                  <div className="text-blue-600 text-3xl font-bold mb-2">Astek</div>
+                  <div className="text-gray-400 text-sm">EXHAUST</div>
                 </div>
               </div>
             </div>
@@ -40,35 +40,35 @@ export function Footer({
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-red-600 transition"
+                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition"
               >
                 f
               </a>
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-red-600 transition"
+                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition"
               >
                 📷
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-red-600 transition"
+                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition"
               >
                 𝕏
               </a>
               <a
                 href="#"
                 aria-label="YouTube"
-                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-red-600 transition"
+                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition"
               >
                 ▶
               </a>
               <a
                 href="#"
                 aria-label="TikTok"
-                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-red-600 transition"
+                className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition"
               >
                 ♪
               </a>

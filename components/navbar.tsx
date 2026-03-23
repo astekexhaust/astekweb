@@ -23,8 +23,8 @@ export function Navbar({ lang, navItems }: NavbarProps) {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href={`/${lang}`} className="flex-shrink-0">
-            <div className="w-10 h-10 bg-red-600 rounded flex items-center justify-center font-bold text-white text-sm">
-              FI
+            <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center font-bold text-white text-xs">
+              AE
             </div>
           </Link>
 
@@ -34,23 +34,18 @@ export function Navbar({ lang, navItems }: NavbarProps) {
               <Link
                 key={key}
                 href={`/${lang}/${key === "product" ? "products" : key === "about" ? "about" : key === "contact" ? "contact" : key}`}
-                className="text-white text-sm font-semibold hover:text-red-600 transition"
+                className="text-white text-sm font-semibold hover:text-blue-600 transition"
               >
                 {value}
               </Link>
             ))}
           </div>
 
-          {/* Right Side - Search & Language */}
+          {/* Right Side - Language Toggle */}
           <div className="flex items-center gap-4">
-            <input
-              type="text"
-              placeholder={lang === "en" ? "Search FI exhaust.com" : "Cerca FI exhaust.com"}
-              className="hidden md:block px-3 py-2 bg-gray-900 border border-gray-700 text-white text-sm rounded focus:outline-none focus:border-red-600"
-            />
             <button
               onClick={toggleLanguage}
-              className="px-3 py-1 text-sm font-semibold text-white hover:text-red-600 transition"
+              className="px-3 py-1 text-sm font-semibold text-white hover:text-blue-600 transition"
             >
               {lang.toUpperCase()}
             </button>

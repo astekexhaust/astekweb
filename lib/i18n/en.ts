@@ -2,12 +2,7 @@ export const en = {
   // Navigation
   nav: {
     product: "PRODUCT",
-    news: "NEWS",
-    review: "REVIEW",
     about: "ABOUT US",
-    faq: "FAQ",
-    dealer: "DEALER",
-    lifestyle: "LIFESTYLE",
     contact: "CONTACT US",
   },
 
@@ -16,7 +11,7 @@ export const en = {
     termsAndConditions: "Terms and Conditions",
     privacyPolicy: "Privacy Policy",
     cookiePolicy: "Cookie Policy",
-    copyright: "© 2026 FI EXHAUST, Inc. All Rights Reserved.",
+    copyright: "© 2026 Astek Exhaust, Inc. All Rights Reserved.",
   },
 
   // Home Page
@@ -27,7 +22,7 @@ export const en = {
     },
     featured: "FEATURED",
     unlockPower: "Unlock more Power",
-    unlockPowerDesc: "FI EXHAUST performance enhancement",
+    unlockPowerDesc: "Astek Exhaust performance enhancement",
     activateDeeper: "Activate Deeper",
     activateDeeperDesc: "Aggressive Sound Tuning",
     theLegend: "The Legend Continues",
@@ -36,9 +31,9 @@ export const en = {
     monstrousPowerDesc: "Dominate the Road",
     mPerformance: "M-Performance",
     mPerformanceDesc: "BMW M Sport Excellence",
-    titaniumSignature: "FI TITANIUM SIGNATURE",
+    titaniumSignature: "Astek TITANIUM SIGNATURE",
     titaniumSignatureDesc: "Unparalleled Strength-to-Weight Ratio",
-    proRemote: "FI Pro Remote Control Ring",
+    proRemote: "Astek Pro Remote Control Ring",
     proRemoteDesc: "Next-Gen Sound Control",
     dealerLocator: "DEALER LOCATOR",
     dealerLocatorDesc: "Find Your Country Dealer",
@@ -49,10 +44,10 @@ export const en = {
   products: {
     hero: {
       title: "PRODUCTS",
-      subtitle: "FI EXHAUST",
+      subtitle: "Astek Exhaust",
     },
     searchPlaceholder: "Search for the Exhaust:",
-    flOriginal: "FI ORIGINAL",
+    flOriginal: "ASTEK ORIGINAL",
     brand: "BRAND",
     search: "SEARCH",
     cantFind: "Can't find your exact vehicle?",
@@ -126,7 +121,7 @@ export const en = {
       carModelPlaceholder: "ex. Toyota / Supra 3.0 / 2020",
       inquiry: "Inquiry:",
       inquiryPlaceholder:
-        "(Optional) FI sales representative will contact about a price quote, if this field is not completed.",
+        "(Optional) Astek Exhaust sales representative will contact about a price quote, if this field is not completed.",
       verificationCode: "Verification Code",
       verificationCodePlaceholder: "ex: 1234",
       recapVerification: "Recap verification code",
@@ -146,9 +141,9 @@ export const en = {
       title: "FAQ",
       items: [
         {
-          question: "What warranty do FI EXHAUST products come with?",
+          question: "What warranty do Astek Exhaust products come with?",
           answer:
-            "All FI EXHAUST systems come with a 2-year manufacturer warranty covering defects in materials and workmanship. Extended warranties are available for premium products.",
+            "All Astek Exhaust systems come with a 2-year manufacturer warranty covering defects in materials and workmanship. Extended warranties are available for premium products.",
         },
         {
           question: "How long does installation typically take?",
@@ -156,14 +151,14 @@ export const en = {
             "Installation times vary depending on the vehicle and exhaust system type, typically ranging from 2-4 hours. Our authorized dealers can provide accurate timelines for your specific vehicle.",
         },
         {
-          question: "Can I install FI EXHAUST myself?",
+          question: "Can I install Astek Exhaust myself?",
           answer:
-            "While some experienced technicians may install FI EXHAUST systems, we strongly recommend professional installation to ensure proper fit, alignment, and warranty compliance.",
+            "While some experienced technicians may install Astek Exhaust systems, we strongly recommend professional installation to ensure proper fit, alignment, and warranty compliance.",
         },
         {
-          question: "Are FI EXHAUST systems street legal?",
+          question: "Are Astek Exhaust systems street legal?",
           answer:
-            "All FI EXHAUST products are designed to comply with standard emissions and noise regulations. However, local regulations may vary, so we recommend checking with your local authorities.",
+            "All Astek Exhaust products are designed to comply with standard emissions and noise regulations. However, local regulations may vary, so we recommend checking with your local authorities.",
         },
         {
           question: "Do you offer custom exhaust solutions?",

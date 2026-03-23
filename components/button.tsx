@@ -17,7 +17,7 @@ export function Button({
     "font-semibold transition rounded px-4 py-2 text-center inline-block";
 
   const variants = {
-    primary: "bg-red-600 text-white hover:bg-red-700",
+    primary: "bg-blue-600 text-white hover:bg-blue-700",
     secondary: "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700",
   };
 

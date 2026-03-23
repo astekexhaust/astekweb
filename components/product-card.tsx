@@ -14,7 +14,7 @@ export function ProductCard({
   model,
 }: ProductCardProps) {
   return (
-    <div className="border border-gray-700 rounded overflow-hidden hover:border-red-600 transition">
+    <div className="border border-gray-700 rounded overflow-hidden hover:border-blue-600 transition">
       {/* Image Placeholder */}
       <div className="w-full h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center text-gray-500">
         {image ? (

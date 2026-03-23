@@ -3,7 +3,7 @@ import { getTranslation } from "@/lib/i18n";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FI EXHAUST | Premium Automotive Exhaust Systems",
+  title: "Astek Exhaust | Premium Automotive Exhaust Systems",
   description:
     "Premium performance exhaust systems for high-end automobiles. Engineering excellence meets sonic perfection.",
 };

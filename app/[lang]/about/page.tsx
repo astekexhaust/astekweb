@@ -38,7 +38,7 @@ export default function AboutPage() {
                     {section.desc}
                   </p>
                   <div className="mt-6 flex gap-4">
-                    <div className="w-1 h-12 bg-red-600"></div>
+                    <div className="w-1 h-12 bg-blue-600"></div>
                     <div>
                       <p className="text-white text-sm font-semibold">
                         {lang === "en" ? "Learn More" : "Scopri di più"}
@@ -54,7 +54,7 @@ export default function AboutPage() {
                   }`}
                 >
                   <div className="text-center">
-                    <div className="text-red-600 text-4xl mb-2">⚙️</div>
+                    <div className="text-blue-600 text-4xl mb-2">⚙️</div>
                     <p className="text-gray-500 text-sm">
                       {lang === "en" ? "Product Image" : "Immagine Prodotto"}
                     </p>
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 ? "Discover why leading automotive enthusiasts choose FI EXHAUST for uncompromising performance and sonic excellence."
                 : "Scopri perché i principali appassionati di automobili scelgono FI EXHAUST per prestazioni senza compromessi e eccellenza sonica."}
             </p>
-            <button className="px-8 py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition">
+            <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
               {lang === "en" ? "Get Started" : "Inizia"}
             </button>
           </div>

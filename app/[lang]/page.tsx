@@ -26,7 +26,7 @@ export default function HomePage() {
         <section className="py-12 px-4 bg-black">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-red-600 text-sm font-bold">
+              <span className="text-blue-600 text-sm font-bold">
                 {t.home.featured}
               </span>
             </div>
