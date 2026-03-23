@@ -3,7 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 const SUPPORTED_LANGUAGES = ["en", "it"];
 const DEFAULT_LANGUAGE = "en";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // Check if the path starts with a supported language
