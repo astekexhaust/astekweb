@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { getTranslation } from "@/lib/i18n";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Start cookieyes banner */}
         <script
