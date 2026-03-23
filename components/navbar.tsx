@@ -41,18 +41,32 @@ export function Navbar({ lang, navItems }: NavbarProps) {
             ))}
           </div>
 
-          {/* Right Side - Language Toggle */}
+          {/* Right Side - Language Selector & Mobile Menu Toggle */}
           <div className="flex items-center gap-4">
+            {/* Language Selector */}
             <button
               onClick={toggleLanguage}
-              className="px-3 py-1 text-sm font-semibold text-white hover:text-blue-600 transition"
+              className="flex items-center gap-2 px-3 py-1.5 text-sm font-semibold text-white hover:text-blue-600 transition rounded hover:bg-gray-900"
+              aria-label={lang === "en" ? "Switch to Italian" : "Switch to English"}
             >
-              {lang.toUpperCase()}
+              {lang === "en" ? (
+                <>
+                  <span className="text-lg">🇺🇸</span>
+                  <span className="hidden sm:inline">EN</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-lg">🇮🇹</span>
+                  <span className="hidden sm:inline">IT</span>
+                </>
+              )}
             </button>
+
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-white"
+              className="md:hidden text-white text-xl"
+              aria-label="Toggle menu"
             >
               ☰
             </button>
@@ -61,17 +75,38 @@ export function Navbar({ lang, navItems }: NavbarProps) {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-gray-900 border-t border-gray-800 py-4">
+          <div className="md:hidden bg-gray-900 border-t border-gray-800 py-4 space-y-1">
             {Object.entries(navItems).map(([key, value]) => (
               <Link
                 key={key}
                 href={`/${lang}/${key === "product" ? "products" : key === "about" ? "about" : key === "contact" ? "contact" : key}`}
-                className="block px-4 py-2 text-white text-sm hover:bg-gray-800 transition"
+                className="block px-4 py-2 text-white text-sm hover:bg-gray-800 transition rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {value}
               </Link>
             ))}
+            {/* Language Selector in Mobile Menu */}
+            <button
+              onClick={() => {
+                toggleLanguage();
+                setIsMenuOpen(false);
+              }}
+              className="w-full text-left px-4 py-2 text-white text-sm hover:bg-gray-800 transition rounded flex items-center gap-2"
+              aria-label={lang === "en" ? "Switch to Italian" : "Switch to English"}
+            >
+              {lang === "en" ? (
+                <>
+                  <span className="text-lg">🇺🇸</span>
+                  <span>English / Italiano</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-lg">🇮🇹</span>
+                  <span>Italiano / English</span>
+                </>
+              )}
+            </button>
           </div>
         )}
       </div>
