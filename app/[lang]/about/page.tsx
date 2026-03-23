@@ -1,12 +1,11 @@
-"use client";
-
+import { use } from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { getTranslation, Language } from "@/lib/i18n";
 
-export default function AboutPage({ params }: { params: { lang: Language } }) {
-  const lang = params.lang;
+export default function AboutPage({ params }: { params: Promise<{ lang: Language }> }) {
+  const { lang } = use(params);
   const t = getTranslation(lang);
 
   return (
