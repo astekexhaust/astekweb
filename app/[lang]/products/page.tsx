@@ -8,8 +8,8 @@ import { Button } from "@/components/button";
 import { getTranslation, Language } from "@/lib/i18n";
 import { useState } from "react";
 
-export default function ProductsPage() {
-  const lang: Language = "en";
+export default function ProductsPage({ params }: { params: { lang: Language } }) {
+  const lang = params.lang;
   const t = getTranslation(lang);
   const [selectedBrand, setSelectedBrand] = useState("all");
 

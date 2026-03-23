@@ -7,8 +7,8 @@ import { Button } from "@/components/button";
 import { getTranslation, Language } from "@/lib/i18n";
 import { useState } from "react";
 
-export default function ContactPage() {
-  const lang: Language = "en";
+export default function ContactPage({ params }: { params: { lang: Language } }) {
+  const lang = params.lang;
   const t = getTranslation(lang);
   const [formData, setFormData] = useState({
     name: "",

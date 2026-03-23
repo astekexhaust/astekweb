@@ -5,8 +5,8 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { getTranslation, Language } from "@/lib/i18n";
 
-export default function CookiePolicyPage() {
-  const lang: Language = "en";
+export default function CookiePolicyPage({ params }: { params: { lang: Language } }) {
+  const lang = params.lang;
   const t = getTranslation(lang);
 
   return (

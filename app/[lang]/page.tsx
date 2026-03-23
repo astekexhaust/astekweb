@@ -7,8 +7,8 @@ import { ProductCard } from "@/components/product-card";
 import { Button } from "@/components/button";
 import { getTranslation, Language } from "@/lib/i18n";
 
-export default function HomePage() {
-  const lang: Language = "en";
+export default function HomePage({ params }: { params: { lang: Language } }) {
+  const lang = params.lang;
   const t = getTranslation(lang);
 
   return (

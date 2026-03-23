@@ -5,8 +5,8 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { getTranslation, Language } from "@/lib/i18n";
 
-export default function AboutPage() {
-  const lang: Language = "en";
+export default function AboutPage({ params }: { params: { lang: Language } }) {
+  const lang = params.lang;
   const t = getTranslation(lang);
 
   return (
