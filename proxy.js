@@ -1,10 +1,16 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
 const SUPPORTED_LANGUAGES = ["en", "it"];
 const DEFAULT_LANGUAGE = "en";
 
-export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+export async function POST(request) {
+  // Proxy is used for middleware-like routing in Next.js 16+
+  // Handle language routing on the server side
+  return NextResponse.next();
+}
+
+export async function GET(request) {
+  const pathname = new URL(request.url).pathname;
 
   // Check if the path starts with a supported language
   const pathnameHasLanguage = SUPPORTED_LANGUAGES.some(
@@ -27,16 +33,3 @@ export function middleware(request: NextRequest) {
     new URL(`/${DEFAULT_LANGUAGE}${pathname}`, request.url)
   );
 }
-
-export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * - public folder
-     */
-    "/((?!_next/static|_next/image|favicon.ico|public).*)",
-  ],
-};
